@@ -7,7 +7,7 @@ Lucitra's local-dev MCP tool collection. A single stdio MCP server that gives Cl
 | Package | Role | Source |
 |---------|------|--------|
 | `@lucitra/mcp` | **Aggregator** — the single stdio binary you point MCP clients at. | `services/server/` |
-| `@lucitra/mcp-macos` | Native macOS automation via AppleScript — click, type, key, focus, read window, list windows, run arbitrary AppleScript. | `packages/mcp-macos/` |
+| `@lucitra/mcp-macos` | Native macOS automation: click / double-click / drag / scroll / mouse-move, type, key, focus, app launch / quit / frontmost, menu-bar click, window list / move / resize, read window via Accessibility, clipboard get/set, region screenshot, open URL / path, notification, run arbitrary AppleScript. | `packages/mcp-macos/` |
 | `@lucitra/mcp-browser` | Playwright-driven web automation. | [lucitra/mcp-browser](https://github.com/lucitra/mcp-browser) (npm dep) |
 | `@lucitra/mcp-desktop` | macOS desktop screenshot (full screen or app window). | [lucitra/mcp-desktop](https://github.com/lucitra/mcp-desktop) (npm dep) |
 
