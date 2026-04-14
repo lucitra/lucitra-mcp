@@ -1,0 +1,49 @@
+{
+  "name": "@lucitra/mcp",
+  "version": "0.1.0",
+  "description": "Lucitra MCP aggregator — single stdio MCP server exposing browser (Playwright), desktop (macOS screenshot), and native macOS automation tools.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "lucitra-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsup",
+    "start": "node dist/index.js",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "automation",
+    "browser",
+    "macos",
+    "playwright"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucitra/lucitra-mcp.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@lucitra/mcp-browser": "^0.1.8",
+    "@lucitra/mcp-desktop": "^0.1.7",
+    "@lucitra/mcp-macos": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.26.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
