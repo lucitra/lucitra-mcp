@@ -32,7 +32,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@lucitra/mcp-browser": "^0.1.8",
+    "@lucitra/mcp-browser": "^0.1.9",
     "@lucitra/mcp-desktop": "^0.1.7",
     "@lucitra/mcp-macos": "workspace:*",
     "@modelcontextprotocol/sdk": "^1.26.0"
